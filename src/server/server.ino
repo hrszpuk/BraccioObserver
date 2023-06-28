@@ -22,6 +22,8 @@ char instruction;
 size_t dataLength = 5;
 int motor, degrees;
 
+Record* records;
+
 void setup() {
   Serial.begin(9600);
   Serial.setTimeout(1);
