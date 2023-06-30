@@ -1,5 +1,6 @@
 #include <Braccio.h>
 #include <Servo.h>
+#include <Arduino.h>
 
 Servo base;
 Servo shoulder;
@@ -21,8 +22,6 @@ char* data;
 char instruction;
 size_t dataLength = 5;
 int motor, degrees;
-
-Record* records;
 
 void setup() {
   Serial.begin(9600);
